@@ -25,10 +25,23 @@ $(document).ready(function () {
       console.log("New color:", newcol);
       block.css("background-color", newcol);
     });
+
     // Counter to count no of clicks
     ++count;
     $("#count").text("Score : " + count);
-    // Game over funtion
-    $();
+    //Game over funtion if all bock colour same
+    allColorsSame = true;
+
+    var firstColor = $("#" + idToggle[0]).css("background-color");
+    for (let i = 0; i < idToggle.length; i++) {
+      if ($("#" + idToggle[i]).css("background-color") != firstColor) {
+        allColorsSame = false;
+
+        break;
+      }
+    }
+    if (allColorsSame) {
+      alert("you won");
+    }
   });
 });
