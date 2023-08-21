@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherApp</title>
+    <title>Weather App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="/WeatherApp/weather.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -12,19 +12,26 @@
 
 <body>
     <div class="container">
-        <div class="search__bar"><input type="text" placeholder="enter location" id="cityname"><button
-                id="search">search</button>
-            <div id="weatherInfo">
-                <div class="temp">
-                    <div class="summary">
-                        <p class="summary"></p>
-                    </div>
+        <!-- Search bar for entering location -->
+        <div class="search__bar"><input type="text" placeholder="enter location" id="cityname"></div>
+        <!-- Weather information display -->
+        <div class="weatherInfo">
+            <div class="temp">
+                <div id="summary">
+                    <p id="text"></p>
+                    <p id="uv"></p>
                 </div>
             </div>
-
+            <!-- Location information -->
+            <div class="location">
+                <h1 id="city"></h1>
+                <h2 id="state"></h2>
+                <h2 id="country"></h2>
+            </div>
         </div>
-    </div>
 
+
+    </div>
 </body>
 
 </html>

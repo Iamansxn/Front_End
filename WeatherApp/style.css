@@ -1,0 +1,70 @@
+/* Apply a gradient background to the body */
+body {
+  background: rgb(101, 162, 218);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 162, 218, 1) 23%,
+    rgba(198, 204, 223, 1) 81%
+  );
+  font-size: 18px;
+}
+.container {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  position: relative;
+  max-width: 80%;
+}
+/* Style the main container */
+.search__bar {
+  background: #ebfffc;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: first baseline;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.33);
+}
+/* Style the search input */
+.search__bar input {
+  flex: 1;
+  display: inline-block;
+  font-size: 30px;
+  background: transparent;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0;
+  outline: 0;
+  height: 60px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+}
+/* Style the weather info */
+.weatherInfo {
+  background-image: url(/WeatherApp/images/white-cloud-blue-sky.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.33);
+  text-align: center;
+  display: none;
+  margin-top: 10px;
+}
+/* Style the temperature display */
+.temp {
+  color: #ebfffc;
+  font-weight: 300;
+  font-size: 2em;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  position: relative;
+}
+/* Style the location headers */
+.location h1 {
+  display: flexbox;
+}
+/* Style the location subheaders */
+.location h2 {
+  display: inline;
+  margin: 10px;
+}
