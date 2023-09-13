@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-shadow: border-box;
+}
+.container {
+  background-color: antiquewhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* heading */
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+/* Store Diaplay */
+.storeDisp {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 5px solid black;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* Porduct */
+.storeDisp div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+  text-align: center;
+  border: 5px solid gray;
+  border-radius: 10px;
+  height: auto;
+  width: 400px;
+  box-shadow: 10px 5px 5px grey;
+}
+.storeDisp div button:hover {
+  background-color: #d4b484;
+}
+
+.storeDisp div img:hover {
+  transform: scale(1.5);
+}
+/* buttons */
+.storeDisp div button {
+  font-size: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 50;
+  font-style: oblique;
+  background-color: blanchedalmond;
+}
+/* Product Name */
+.storeDisp div h2 {
+  margin: 20px;
+}
+/* Product price & Description */
+.storeDisp div p {
+  margin: 5px;
+  text-align: justify;
+  padding: 5px;
+}

@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: bisque;
+}
+
+#sec {
+  margin-top: 50px;
+}
+
+#left {
+  width: 45%;
+  float: left;
+  text-align: justify;
+  display: flex;
+  padding-left: -10px;
+
+  background-color: bisque;
+}
+#right {
+  width: 45%;
+  float: right;
+  text-align: justify;
+  display: flex;
+  padding: right -10px;
+  background-color: bisque;
+}

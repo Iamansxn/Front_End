@@ -1,0 +1,25 @@
+.data__input {
+  font-size: large;
+  margin: 50px 10px 40px;
+}
+label {
+  display: inline-block;
+  width: 150px;
+}
+.button {
+  width: 200px;
+  padding: 30px;
+  outline-style: solid;
+  margin-left: 50px;
+  text-align: justify;
+}
+.list tr th {
+  padding: 100px;
+}
+input:hover {
+  background-color: bisque;
+  border-color: rgb(11, 178, 81);
+}
+#tbody {
+  text-align: center;
+}

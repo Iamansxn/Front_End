@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JQuery</title>
+  <!-- added stylesheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- added Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Create a paragraph and pop-up a alert message "Clicked me" when you clicked inside paragraph. -->
+  <p class="task">
+    Create a paragraph and pop-up a alert message "Clicked me" when you
+    clicked inside paragraph.
+  </p>
+  <p id="clickme_task">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+    mollitia libero recusandae voluptate nemo, eos repudiandae culpa deleniti,
+    dicta quod repellendus beatae consequatur. Minima eveniet nostrum
+    accusamus, ut ad doloribus?
+  </p>
+  <!-- When a user clicks submit button leaving any of the input blank, pop-up a alert informing user about blank field and set focus on that field along with changing its background color to red . -->
+  <p class="task">
+    When a user clicks submit button leaving any of the input blank, pop-up a
+    alert informing user about blank field and set focus on that field along
+    with changing its background color to red .
+  </p>
+  <label for="fname">First Name</label><br />
+  <input type="text" id="fname" /><br />
+  <label for="lname">Last Name</label><br />
+  <input type="text" id="lname" /><br /><br />
+  <button id="validate_name">Submit</button>
+
+  <!-- Validate the confirm password field on every character entered by the user. -->
+  <p class="task">
+    Validate the confirm password field on every character entered by the
+    user.
+  </p>
+  <label for="pass">Password :</label><br />
+  <input type="password" name="pass" id="pass" /><br />
+  <label for="cpass">Confirm Password :</label><br />
+  <input type="password" id="cpass" /><br />
+  <p id="pass_error" class="error"></p>
+  <br />
+  <button id="valid_pass">Submit</button>
+
+  <!-- Allow user to enter the details of 10th board. Also user can add details of 12th and graduation if he/she require. Provide a button to add/delete any number of rows for qualification. -->
+  <p class="task">
+    Allow user to enter the details of 10th board. Also user can add details
+    of 12th and graduation if he/she require. Provide a button to add/delete
+    any number of rows for qualification.
+  </p>
+  <label class="sd">Class</label> <label class="sd">Board</label>
+  <label class="sd">Marks</label> <label class="sd">Division</label>
+  <div id="sdetails"></div>
+  <br />
+  <input type="text" id="class" placeholder="Enter Class" />
+  <input type="text" id="board" placeholder="Enter Board" />
+  <input type="number" id="marks" placeholder="Enter Marks" />
+  <input type="text" id="division" placeholder="Enter Division" />
+  <button id="add_details">+</button>
+
+  <!-- Change the background color of all the even rows in the table to LightGrey and for odd rows to DodgerBlue when one of the button is clicked. -->
+  <p class="task">
+    Change the background color of all the even rows in the table to LightGrey
+    and for odd rows to DodgerBlue when one of the button is clicked.
+  </p>
+  <button id="tr_even">Color Even Rows</button>
+  <button id="tr_odd">Color Odd Rows</button>
+  <table id="task_2">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro Comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Change the text color of first and last paragraph of each each element with "test" class, automatically after every 5 seconds. -->
+  <p class="task">
+    Change the text color of first and last paragraph of each each element
+    with "test" class, automatically after every 5 seconds.
+  </p>
+  <div class="test">
+    <p>Car Details</p>
+    <p>
+      In real life, a car is an object. A car has properties like weight and
+      color, and methods like start and stop. All cars have the same
+      properties, but the property values differ from car to car.
+    </p>
+    <p>
+      All cars have the same methods, but the methods are performed at
+      different times.
+    </p>
+  </div>
+  <br />
+  <div class="demo">
+    <p>Food Details</p>
+    <p>The seven food categories are</p>
+    <p>
+      Vegetables, Fruits, Grains, legumes, nuts and seeds, Meat and poultry,
+      Fish and seafood, Dairy foods, Eggs
+    </p>
+    <p>
+      Food sources from animals, birds, seafood and some plants provide
+      protein that is the building blocks of cells
+    </p>
+  </div>
+  <br />
+  <div class="test">
+    <p>Mobile Details</p>
+    <p>
+      There are three categories of mobile phones: basic phones, feature
+      phones, and smartphones.
+    </p>
+    <p>Smartphones are equipped with a QWERTY keypad.</p>
+  </div>
+
+  <!-- Create two buttons previous and next, above a image container element. On click images should be changed to previous one or next one accordingly. -->
+  <p class="task">
+    Create two buttons previous and next, above a image container element. On
+    click images should be changed to previous one or next one accordingly.
+  </p>
+  <button id="previos_img">Previous</button><button id="next_img">Next</button><br /><br />
+  <div id="images">
+    <img class="current_image" src="./Images/image1.jpg" alt="cedcoss" />
+    <img class="image" src="./Images/image2.jpg" alt="cedcoss" />
+    <img class="image" src="./Images/image3.jpg" alt="cedcoss" />
+  </div>
+
+  <!-- Create an array consisting names of some flowers. Add a textbox to suggest the flower names on every character typed. -->
+  <p class="task">
+    Create an array consisting names of some flowers. Add a textbox to suggest
+    the flower names on every character typed.
+  </p>
+  <input type="text" id="flower_input" />
+  <p>Suggestions: <span id="flower_name"></span></p>
+
+  <!-- Create a list that stores the products and their prices according to their size/color. when user selects a product and its size/color show the appropriate price. accordingly. -->
+  <p class="task">
+    Create a list that stores the products and their prices according to their
+    size/color. when user selects a product and its size/color show the
+    appropriate price. accordingly.
+  </p>
+  <table>
+    <caption>
+      Products
+    </caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size/Color</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Duffle Bag</td>
+        <td>
+          <select id="product_size">
+            <option value="">--Select Size</option>
+            <option value="Small">Small</option>
+            <option value="Large">Large</option>
+            <option value="Big">Big</option>
+          </select>
+        </td>
+        <td id="product_price">0</td>
+      </tr>
+      <tr>
+        <td>T-Shirts</td>
+        <td>
+          <select id="product_color">
+            <option value="">--Select Size</option>
+            <option value="light_Gray">light Gray</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+          </select>
+        </td>
+        <td id="product_price">0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Create a list of products with sub-categories. When we click on  "+" button one more category can be added to the list in that category/sub-category. -->
+  <p class="task">
+    Create a list of products with sub-categories. When we click on "+" button
+    one more category can be added to the list in that category/sub-category.
+  </p>
+  <ul>
+    <li>Clothes <button class="add_cat">+</button>
+      <ul id="inner_ul_clothes">
+        <li>T-shirt <button class="add_sub_cat">+</button></li>
+      </ul>
+    </li>
+    <li>Electronics <button class="add_cat">+</button>
+      <ul id="inner_ul_elec">
+        <li>Mobiles <button class="add_sub_cat">+</button></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- added js file -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

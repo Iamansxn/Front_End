@@ -1,0 +1,40 @@
+.Container {
+  margin: 50px;
+}
+.header {
+  padding-bottom: 50px;
+}
+.header__logo {
+  display: inline;
+  width: 70%;
+  float: left;
+}
+.header__link ul {
+  list-style-type: none;
+  display: flex;
+}
+.header__link ul li {
+  padding-right: 50px;
+}
+.content {
+  width: 95%;
+  background-color: #eeeeee;
+  display: block;
+  padding: 40px 20px;
+}
+.content__content {
+  width: 30%;
+}
+.container-heading__content {
+  width: 29%;
+  display: inline;
+  float: left;
+  padding: 20px 20px;
+  text-align: center;
+}
+.container-heading__box {
+  background-color: #eeeeee;
+  padding: 3em 4em;
+  margin-top: 20px 20px;
+  align-content: center;
+}

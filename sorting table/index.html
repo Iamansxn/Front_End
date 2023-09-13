@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="Asc-Des" onchange=" datasort()">
+        <option value="sort">sort</option>
+        <option id="asc" value="asc">Ascending</option>
+        <option id="dsc" value="dsc">Decending</option>
+    </select>
+    <select id="category" onchange=" datasort()">
+        <option value="sort">sort</option>
+        <option value="Company">Company</option>
+        <option value="Model">Model</option>
+        <option value="Memory">Memory</option>
+        <option value="Price">Price</option>
+    </select>
+    <table id="table">
+    </table>
+    <script src="sorting.js"></script>
+</body>
+
+
+</html>

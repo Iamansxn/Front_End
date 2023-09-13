@@ -1,0 +1,74 @@
+.Container {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header__logo {
+  height: 50px;
+  background-color: gray;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  padding: 5px 20px;
+}
+
+.header__link {
+  background-color: black;
+  height: 40px;
+}
+.header__link ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 40px;
+}
+.header__link li {
+  box-sizing: border-box;
+  float: left;
+  border-right: 1px solid white;
+}
+.header__link a {
+  padding: 0 28px;
+  color: white;
+  text-decoration: none;
+}
+.header__link a:hover {
+  background-color: green;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 75%;
+  background: white;
+}
+.content1_heading {
+  color: darkblue;
+  font-size: 30px;
+  margin: 1px;
+}
+
+.right {
+  width: 25%;
+  padding-bottom: 10px;
+  background-color: #bbb;
+}
+.content2_heading {
+  color: darkblue;
+  font-size: 30px;
+  margin: 1px;
+  padding: 1px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer_section {
+  background-color: darkgray;
+  height: 50px;
+}
+.foot_content {
+  float: right;
+}

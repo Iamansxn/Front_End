@@ -1,0 +1,97 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #f5f5f5;
+}
+/* container  */
+.container {
+  border: 10px solid #dfd7bf;
+  border-radius: 45px;
+  max-width: 555px;
+  margin: 125px auto;
+  background-color: #f2ead3;
+}
+/* container_heading */
+h1 {
+  color: #3f2305;
+  text-align: center;
+}
+.container h3 {
+  margin: 30px 40px;
+  text-align: left;
+  position: relative;
+}
+/*Add_ITEMS */
+.add__item {
+  text-align: left;
+  margin: 45px;
+  border-bottom: 5px solid #dfd7bf;
+  height: 100px;
+  width: auto;
+}
+/* ADD_ITEM_TEXT BOX */
+.add__item input {
+  width: 350px;
+  margin: 20px 0px 0px;
+}
+/* ADD_ITEM_BUTTONS */
+.add__item button {
+  text-decoration: none;
+  width: 100px;
+  background-color: #3f2305;
+  border: none;
+  margin-right: 10px;
+  color: #f5f5f5;
+}
+/* ADD_ITEM_HEADING */
+.add__item h2 {
+  color: #3f2305;
+}
+/* uncomplete_task */
+.uncomplete__list {
+  color: #3f2305;
+  text-align: left;
+  margin: 45px;
+  border-bottom: 5px solid #dfd7bf;
+  position: relative;
+}
+/* uncomplete_task_BUTTON */
+.uncomplete__list button {
+  text-decoration: none;
+  width: 100px;
+  background-color: #3f2305;
+  border: none;
+  margin-right: 10px;
+  color: #f5f5f5;
+  position: relative;
+}
+/* uncomplete_task_LIST */
+.uncomplete__list li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+/* complete_task */
+.complete__list {
+  color: #3f2305;
+  text-align: left;
+  margin: 45px;
+}
+/* complete_task_LIST */
+.complete__list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* uncomplete_task_BUTTONS */
+.complete__list button {
+  text-decoration: none;
+  width: 100px;
+  background-color: #3f2305;
+  border: none;
+  margin-right: 10px;
+  color: #f5f5f5;
+  position: relative;
+}

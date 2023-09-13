@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Head -->
+        <h1>TO-DO List</h1>
+        <!--  user input -->
+        <div class="add__item">
+            <h2>Add Item</h2>
+            <input type="text" name="additem" id="additem">
+            <button onclick="add()" id="add">Add</button><button id="update" onclick="update()">Update</button>
+        </div>
+        <!-- list of uncomplete task -->
+        <h3>Uncomplete-Task</h3>
+        <ul class="uncomplete__list" id="uncompletelist">
+            <li> <input type="checkbox" id="TASK1" name="TASK1"><label for="TASK1">TASK1</label>
+                <button class="edit" onclick=" edit()" id="edit">edit</button><button class="delete" id="delete"
+                    onclick="remove()">delete</button>
+            </li>
+        </ul>
+        <!-- list of completed task-->
+        <h3>Completed-Task</h3>
+        <ul class="complete__list" id="completelist">
+            <li><input type="checkbox" checked id="TASK2" name="TASK2"><label for="TASK2">TASK2</label><button
+                    class="edit" onclick=" edit()">edit</button>
+                <button class="delete" onclick="remove()">delete</button>
+            </li>
+        </ul>
+    </div>
+    <script src="/Project_1/itemfunction.js"></script>
+</body>
+
+</html>

@@ -30,18 +30,14 @@ $(document).ready(function () {
     ++count;
     $("#count").text("Score : " + count);
     //Game over funtion if all bock colour same
-    allColorsSame = true;
-
-    var firstColor = $("#" + idToggle[0]).css("background-color");
-    for (let i = 0; i < idToggle.length; i++) {
-      if ($("#" + idToggle[i]).css("background-color") != firstColor) {
-        allColorsSame = false;
-
+    var blackColor = $("#" + idToggle[1]).css("background-color");
+    for (let i = 1; i < idToggle.length; i++) {
+      if ($("#" + idToggle[i]).css("background-color") != blackColor) {
+        blockcol = false;
         break;
       }
-    }
-    if (allColorsSame) {
-      alert("you won");
+      blockcol = true;
+      alert("you won" + " " + "Score:" + count);
     }
   });
 });
